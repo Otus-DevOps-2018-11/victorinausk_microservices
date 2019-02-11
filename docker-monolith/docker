@@ -1,0 +1,73 @@
+  PID TTY          TIME CMD
+ 1721 tty1     00:00:00 gnome-session-b
+ 1728 tty1     00:06:21 gnome-shell
+ 1782 tty1     00:00:00 Xwayland
+ 1872 tty1     00:00:00 ibus-daemon
+ 1875 tty1     00:00:00 ibus-dconf
+ 1877 tty1     00:00:00 ibus-x11
+ 1933 tty1     00:00:00 gsd-xsettings
+ 1936 tty1     00:00:00 gsd-a11y-settin
+ 1937 tty1     00:00:00 gsd-clipboard
+ 1938 tty1     00:00:01 gsd-color
+ 1940 tty1     00:00:00 gsd-datetime
+ 1942 tty1     00:00:00 gsd-housekeepin
+ 1943 tty1     00:00:00 gsd-keyboard
+ 1944 tty1     00:00:00 gsd-media-keys
+ 1947 tty1     00:00:00 gsd-mouse
+ 1949 tty1     00:00:00 gsd-power
+ 1952 tty1     00:00:00 gsd-print-notif
+ 1962 tty1     00:00:00 gsd-rfkill
+ 1965 tty1     00:00:00 gsd-screensaver
+ 1967 tty1     00:00:00 gsd-sharing
+ 1971 tty1     00:00:00 gsd-smartcard
+ 1975 tty1     00:00:00 gsd-sound
+ 1984 tty1     00:00:00 gsd-wacom
+ 2161 tty1     00:00:00 ibus-engine-sim
+ 2630 tty2     00:06:35 Xorg
+ 2651 tty2     00:00:00 gnome-session-b
+ 2809 tty2     00:39:12 gnome-shell
+ 2865 tty2     00:00:07 ibus-daemon
+ 2869 tty2     00:00:00 ibus-dconf
+ 2871 tty2     00:00:00 ibus-x11
+ 2942 tty2     00:00:00 gsd-power
+ 2943 tty2     00:00:00 gsd-print-notif
+ 2945 tty2     00:00:00 gsd-rfkill
+ 2946 tty2     00:00:00 gsd-screensaver
+ 2948 tty2     00:00:00 gsd-sharing
+ 2956 tty2     00:00:00 gsd-smartcard
+ 2958 tty2     00:00:00 gsd-sound
+ 2960 tty2     00:00:00 gsd-xsettings
+ 2968 tty2     00:00:00 gsd-wacom
+ 2975 tty2     00:00:00 gsd-a11y-settin
+ 2976 tty2     00:00:00 gsd-clipboard
+ 2982 tty2     00:00:01 gsd-color
+ 2985 tty2     00:00:00 gsd-datetime
+ 2986 tty2     00:00:00 gsd-housekeepin
+ 2989 tty2     00:00:00 gsd-keyboard
+ 2993 tty2     00:00:00 gsd-media-keys
+ 2996 tty2     00:00:00 gsd-mouse
+ 3035 tty2     00:00:00 gsd-printer
+ 3040 tty2     00:00:00 gsd-disk-utilit
+ 3055 tty2     00:00:05 nautilus-deskto
+ 3103 tty2     00:00:01 ibus-engine-sim
+ 3180 tty2     00:13:31 firefox
+ 3278 tty2     00:04:53 Web Content
+ 3356 tty2     00:07:54 Web Content
+ 3393 tty2     00:00:33 WebExtensions
+ 3492 tty2     00:06:40 Web Content
+ 3550 tty2     00:20:02 Web Content
+ 3706 tty2     00:00:00 update-notifier
+ 3709 tty2     00:00:04 gnome-software
+ 3838 tty2     00:00:00 deja-dup-monito
+ 6375 tty2     00:00:18 WhatsDesk
+ 6491 tty2     00:00:00 whatsdesk
+ 6532 tty2     00:00:30 whatsdesk
+ 8054 tty2     00:01:10 code
+ 8058 tty2     00:00:00 code
+ 8121 tty2     00:02:03 code
+ 8185 tty2     00:00:00 code
+ 8195 tty2     00:00:01 code
+ 8229 tty2     00:00:01 code
+14039 pts/1    00:00:00 dbus-launch
+14350 pts/1    00:00:00 sudo
+14351 pts/1    00:00:00 ps
