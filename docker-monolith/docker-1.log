@@ -1,0 +1,21 @@
+REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
+victorinausk/ubuntu-tmp-file   latest              6517906757db        4 seconds ago       117MB
+yourname/ubuntu-tmp-file       latest              8bd62915867f        2 minutes ago       117MB
+ubuntu                         16.04               7e87e2b3bf7a        2 weeks ago         117MB
+hello-world                    latest              fce289e99eb9        5 weeks ago         1.84kB
+
+
+Команда 'docker inspect' получает метаданные верхнего слоя контейнера или образа.
+
+Отличия "docker inspect <container_id>" & "docker inspect <image_id>":
+
+Контейнер в отличии от образа содержит:
+- информацию о состоянии (state) контенера (запущен или нет, время запуска итд)
+- ссылается на образ из которого он запущен
+- содержит информацию о смонтированных дисках
+- конфигурации хоста и лимиты
+- содержит сетевые настройки контейнера
+
+Образ содержит информацию:
+- о своем предке
+- информацию о слоях
