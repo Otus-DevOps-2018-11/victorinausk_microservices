@@ -18,3 +18,5 @@ vault.key
 .pytest_cache
 
 google-cloud-sdk/*
+
+.env
