@@ -99,3 +99,39 @@ PR checklist
 
 +Выставил label с темой домашнего задания
 +Выставил label с названием домашнего задания
+
+Выполнено ДЗ № 19
+
+В процессе сделано:
+
+Подготовка окружения
+                    ◦ Создала правило Prometheus и Puma:
+                    ◦ Создала Docker хост в GCE и настроила локальное окружение
+                    ◦ Создалаdocker хост
+                    ◦ Подключилась к docker-machine
+Запуск Prometheus
+                    ◦ Запустила Prometheus внутри docker контейнера
+                    ◦ Остановила Prometheus
+Создание Docker образа
+                    ◦ Создалаdocker файл monitoring/prometheus/Dockerfile
+                    ◦ В monitoring/prometheus создала файл prometheus.yml
+                    ◦ В prometheus собрала Docker образ
+
+Образы микросервисов
+                    ◦ Произвела сборку образов при помощи скриптов docker_build.sh
+                    ◦ Определила в docker/docker-compose.yml новый сервис
+Exporters
+                    ◦ Добавила слежение за новым сервисом в Prometheus
+                    ◦ Пересоздала для Prometheus
+                    ◦ Перезапустила сервисы
+
+        В списке появился ещё один сервис node
+
+                    ◦ Получила информацию об использовании CPU
+                    ◦ Запушила собранные образы на DockerHub:
+
+
+PR checklist
+
++Выставил label с темой домашнего задания
++Выставил label с названием домашнего задания
