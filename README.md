@@ -134,3 +134,18 @@ PR checklist
 
 +Выставил label с темой домашнего задания
 +Выставил label с названием домашнего задания
+
+HW 23
+Выполнено ДЗ № 23
+
+- Открыты порты в файрволле*
+- Создан Docker хост в GCE и настроено локальное окружение на работу с ним
+- Создала отдельный файл docker-compose-monitoring.yml для сервисов мониторинга
+- Добавила cAdvisor для наблюдения за состоянием Docker container и host
+- Добавила Grafana для визуализации данных из Prometheus
+    *Импортировала dashboard DockerMonitoring
+    *Настроила dashboard UI_Service_Monitoring
+    *Настроила dashboard Business_Logic_Monitoring
+- Добавила Alert на базе Alertmanager
+- Запушила собранные образы на DockerHub
+- Удалила VM
