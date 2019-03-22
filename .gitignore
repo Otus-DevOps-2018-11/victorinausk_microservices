@@ -20,3 +20,10 @@ vault.key
 google-cloud-sdk/*
 
 .env
+
+docker-compose.yml
+build_info.txt
+prometheus/
+
+## python specific
+*.pyc
