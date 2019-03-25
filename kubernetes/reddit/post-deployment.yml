@@ -15,5 +15,5 @@ spec:
         app: post
     spec:
       containers:
-      - image: fl64/post:latest
+      - image: victorinausk/post:latest
         name: post
