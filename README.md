@@ -199,10 +199,18 @@ HW Kubernates-2
 
 Основное задание:
 
-- развернула kubernates по интсрукцииhardway
-- создала файлы манифестов серывисов reddit
-
-
+    * Установила kubectl, установила и запустила minikube
+    * Запустила ui в кластере
+    * Описала и запустила comment-service.yml, post-service.yml и mongodb-service.yml
+    * Удалила mongodb-service
+    * Создала ui-service.yml с добавлением NodePort
+    * Запустила minikube service ui
+    * Создала и применила dev-namespace.yml
+    * В GKE создала кластер с указанными параметрами
+    * Создала dev namespace и задеплоила в нем приложение
+    * Создала правило брандмауэра для ui
+    * Приложила скриншот
+    * Назначила роль service account-у dashboard-а с помощью clusterrolebinding
 
 PR checklist
 
