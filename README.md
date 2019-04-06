@@ -193,3 +193,26 @@ PR checklist
 
 +Выставил label с темой домашнего задания
 +Выставил label с названием домашнего задания
+
+HW Kubernates-2
+Выполнено ДЗ № 26
+
+Основное задание:
+
+    * Установила kubectl, установила и запустила minikube
+    * Запустила ui в кластере
+    * Описала и запустила comment-service.yml, post-service.yml и mongodb-service.yml
+    * Удалила mongodb-service
+    * Создала ui-service.yml с добавлением NodePort
+    * Запустила minikube service ui
+    * Создала и применила dev-namespace.yml
+    * В GKE создала кластер с указанными параметрами
+    * Создала dev namespace и задеплоила в нем приложение
+    * Создала правило брандмауэра для ui
+    * Приложила скриншот
+    * Назначила роль service account-у dashboard-а с помощью clusterrolebinding
+
+PR checklist
+
++Выставил label с темой домашнего задания
++Выставил label с названием домашнего задания
