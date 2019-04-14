@@ -256,7 +256,7 @@ HW Kubernates-4
  Отдельно :
   - для понимания ошибок со статусом Pending POD kubectl describe po gitlab-gitlab-6654b8f4c5-grrdx
   - для нормальной работы райплайна с helm заменить команду helm init --upgrade на helm init --force-upgrade
-  - для исправления сборки докера с последней версией добавить в докерфайл 
+  - для исправления сборки докера с последней версией добавить в докерфайл
     RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 
 PR checklist
