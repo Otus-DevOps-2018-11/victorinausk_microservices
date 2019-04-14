@@ -1,0 +1,10 @@
+---
+service:
+  internalPort: 9292
+  externalPort: 9292
+
+image:
+  repository: victorinausk/comment
+  tag: latest
+
+databaseHost:

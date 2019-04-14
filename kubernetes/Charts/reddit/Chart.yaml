@@ -1,0 +1,7 @@
+name: reddit
+version: 1.0.0
+description: OTUS reddit application
+maintainers:
+  - name: Victoria Uskova
+    email: victoria.uskova@gmail.com
+appVersion: 1.0
