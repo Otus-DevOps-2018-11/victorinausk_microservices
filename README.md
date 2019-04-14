@@ -215,7 +215,11 @@ HW Kubernates-2
 PR checklist
 
 +Выставил label с темой домашнего задания
+<<<<<<< HEAD
 +Выставил label с названием домашнего задания
+=======
+
+>>>>>>> master
 
 HW Kubernates-3
 Выполнено ДЗ № 24
