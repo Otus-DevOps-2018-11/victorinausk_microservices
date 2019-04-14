@@ -35,6 +35,7 @@ release:
   script:
     - setup_docker
     - release
+    - trigger
   only:
     - master
 
@@ -59,13 +60,37 @@ review:
   except:
     - master
 
+stop_review:
+  stage: cleanup
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - install_dependencies
+    - delete
+  environment:
+    name: review/$CI_PROJECT_PATH/$CI_COMMIT_REF_NAME
+    action: stop
+  when: manual
+  allow_failure: true
+  only:
+    refs:
+      - branches
+    kubernetes: active
+  except:
+    - master
+
 .auto_devops: &auto_devops |
   [[ "$TRACE" ]] && set -x
   export CI_REGISTRY="index.docker.io"
   export CI_APPLICATION_REPOSITORY=$CI_REGISTRY/$CI_PROJECT_PATH
   export CI_APPLICATION_TAG=$CI_COMMIT_REF_SLUG
   export CI_CONTAINER_NAME=ci_job_build_${CI_JOB_ID}
-  export TILLER_NAMESPACE="kube-system "
+  export TILLER_NAMESPACE="kube-system"
+
+  function trigger() {
+    apk add -U curl
+    curl -X POST -F token=${DEPLOY_TOKEN} -F ref=master http://gitlab-gitlab/api/v4/projects/4/trigger/pipeline
+  }
 
   function deploy() {
     track="${1-stable}"
@@ -95,7 +120,7 @@ review:
   function install_dependencies() {
 
     apk add -U openssl curl tar gzip bash ca-certificates git
-    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
+    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub
     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r3/glibc-2.23-r3.apk
     apk add glibc-2.23-r3.apk
     rm glibc-2.23-r3.apk
@@ -173,24 +198,11 @@ review:
     echo ""
   }
 
+  function delete() {
+    track="${1-stable}"
+    name="$CI_ENVIRONMENT_SLUG"
+    helm delete "$name" --purge || true
+  }
+
 before_script:
   - *auto_devops
-
-stop_review:
-  stage: cleanup
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - install_dependencies
-    - delete
-  environment:
-    name: review/$CI_PROJECT_PATH/$CI_COMMIT_REF_NAME
-    action: stop
-  when: manual
-  allow_failure: true
-  only:
-    refs:
-      - branches
-    kubernetes: active
-  except:
-    - master
