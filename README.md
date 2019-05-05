@@ -215,11 +215,6 @@ HW Kubernates-2
 PR checklist
 
 +Выставил label с темой домашнего задания
-<<<<<<< HEAD
-+Выставил label с названием домашнего задания
-=======
-
->>>>>>> master
 
 HW Kubernates-3
 Выполнено ДЗ № 24
@@ -262,6 +257,26 @@ HW Kubernates-4
   - для нормальной работы райплайна с helm заменить команду helm init --upgrade на helm init --force-upgrade
   - для исправления сборки докера с последней версией добавить в докерфайл 
     RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+
+PR checklist
+
++Выставил label с темой домашнего задания
++Выставил label с названием домашнего задания
+
+HW Kubernates-5
+Выполнено ДЗ № 26
+
+Основное задание:
+
+- установила prometheus и настроила сбор метрик для k8s, метрики также отображаются для каждого микросервиса приложения (ui, post, comment)
+- установлена grafana + настроены дэшборды для отображения статистики приложения. отображение графиков возможно для разных окружений
+- установила и настроила EFK для сбора логов приложения
+
+ Отдельно :
+  при ошибках с установкой nginx использовать :
+
+- helm install stable/nginx-ingress --name nginx --namespace  kube-system --set rbac.create=false --set rbac.createRole=false --set rbac.createClusterRole=false
+
 
 PR checklist
 
